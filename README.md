@@ -17,7 +17,10 @@ A travel simulation browser game built with React and Vite for the mid-term exam
 
 1. Extract the ZIP `UcupMenjelajahNusantara---spacemen`.
 
-2. Open the extracted folder in your terminal.
+2. Open the extracted folder in your terminal, then open folder `UcupMenjelajahNusantara---spacemen-main`.
+```bash
+cd UcupMenjelajahNusantara---spacemen-main
+```
 
 3. Install dependencies:
 ```bash
