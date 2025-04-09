@@ -15,27 +15,7 @@ A travel simulation browser game built with React and Vite for the mid-term exam
 
 You can run this project using one of the following methods:
 
-### Option 1: Clone from GitHub
-
-1. Clone the repository:
-```bash
-git clone https://github.com/drusaurus/UcupMenjelajahNusantara---spacemen.git
-cd UcupMenjelajahNusantara---spacemen
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-The app will run at `http://localhost:3000` by default.
-
-### Option 2: Extract from ZIP File
+### Extract from ZIP File
 
 1. Extract the ZIP `UcupMenjelajahNusantara---spacemen`.
 
