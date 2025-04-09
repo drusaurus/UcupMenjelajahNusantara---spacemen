@@ -1,39 +1,45 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import { useGame } from "./useGame"
 
 export function usePlayerStatus() {
     const { playerStatus, updatePlayerStatus, navigateToGameOver } = useGame()
+    const statusRef = useRef(playerStatus)
 
-    // Status degradation over time
+    // Keep the ref updated
     useEffect(() => {
-        const degradeInterval = setInterval(() => {
-            const { meal, sleep, hygiene, happiness } = playerStatus
+        statusRef.current = playerStatus
+    }, [playerStatus])
 
-            // Calculate new values
+    // Degrade status periodically
+    useEffect(() => {
+        console.log("⏳ Starting degradation interval")
+
+        const interval = setInterval(() => {
+            const { meal, sleep, hygiene, happiness } = statusRef.current
+
             const newMeal = Math.max(0, meal - 2)
             const newSleep = Math.max(0, sleep - 1.5)
             const newHygiene = Math.max(0, hygiene - 1)
 
-            // Happiness decreases if other stats are low
-            const statsPenalty = (meal < 20 ? 1 : 0) + (sleep < 20 ? 1 : 0) + (hygiene < 20 ? 1 : 0)
+            const penalty = (meal < 20 ? 1 : 0) + (sleep < 20 ? 1 : 0) + (hygiene < 20 ? 1 : 0)
+            const newHappiness = Math.max(0, happiness - (0.5 + penalty))
 
-            const newHappiness = Math.max(0, happiness - (0.5 + statsPenalty))
+            console.log("📉 Degrading status...")
 
-            // Update status
             updatePlayerStatus({
                 meal: newMeal,
                 sleep: newSleep,
                 hygiene: newHygiene,
                 happiness: newHappiness,
             })
-        }, 10000) // Check every 3 seconds
+        }, 10000) // every 10 seconds
 
-        return () => clearInterval(degradeInterval)
-    }, [playerStatus, updatePlayerStatus])
+        return () => clearInterval(interval)
+    }, [updatePlayerStatus]) // only updatePlayerStatus in deps
 
-    // Check for game over conditions
+    // Game over check — reactive to live playerStatus
     useEffect(() => {
         const { meal, sleep, hygiene, happiness } = playerStatus
 
@@ -48,21 +54,15 @@ export function usePlayerStatus() {
         }
     }, [playerStatus, navigateToGameOver])
 
-    // Handle activity
     const performActivity = (activity) => {
         const { money } = playerStatus
 
-        // Check if player has enough money
-        if (money + activity.cost < 0) {
-            return false // Not enough money
-        }
+        if (money - activity.cost < 0) return false
 
-        // Calculate new status values
         const updates = {
-            money: money + activity.cost + (activity.moneyGain || 0),
+            money: money - activity.cost + (activity.moneyGain || 0),
         }
 
-        // Apply effects
         if (activity.effects.meal) {
             updates.meal = Math.min(100, playerStatus.meal + activity.effects.meal)
         }
@@ -76,10 +76,8 @@ export function usePlayerStatus() {
             updates.happiness = Math.min(100, playerStatus.happiness + activity.effects.happiness)
         }
 
-        // Update player status
         updatePlayerStatus(updates)
-
-        return true // Activity performed successfully
+        return true
     }
 
     return {
@@ -87,4 +85,3 @@ export function usePlayerStatus() {
         performActivity,
     }
 }
-

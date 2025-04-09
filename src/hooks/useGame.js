@@ -1,8 +1,8 @@
 "use client"
 
-import { useContext } from "react"
-import { GameContext } from "../context/GameContext"
-import { GameScreen } from "../constants/gameData.js"
+import {useCallback, useContext} from "react"
+import { GameContext } from "../contexts/GameContext"
+import { GameScreen } from "../constants/gameData"
 
 export function useGame() {
     const context = useContext(GameContext)
@@ -26,10 +26,10 @@ export function useGame() {
         dispatch({ type: "SET_SCREEN", payload: GameScreen.GAME_ARENA })
     }
 
-    const navigateToGameOver = (reason) => {
+    const navigateToGameOver = useCallback((reason) => {
         dispatch({ type: "SET_GAME_OVER_REASON", payload: reason })
         dispatch({ type: "SET_SCREEN", payload: GameScreen.GAME_OVER })
-    }
+    }, [dispatch])
 
     const navigateToCreators = () => {
         dispatch({ type: "SET_SCREEN", payload: GameScreen.CREATORS })
@@ -47,9 +47,9 @@ export function useGame() {
     }
 
     // Update player status
-    const updatePlayerStatus = (updates) => {
+    const updatePlayerStatus = useCallback((updates) => {
         dispatch({ type: "UPDATE_PLAYER_STATUS", payload: updates })
-    }
+    }, [dispatch])
 
     // Update game time
     const updateGameTime = (updates) => {

@@ -8,28 +8,38 @@ export function usePlayerMovement() {
     const { playerPosition, currentLocation, updatePlayerPosition, setCurrentLocation } = useGame()
 
     const [movingDirection, setMovingDirection] = useState(null)
+    const [facingDirection, setFacingDirection] = useState("down")
 
     // Handle keyboard movement
     useEffect(() => {
         const handleKeyDown = (e) => {
-            switch (e.key) {
-                case "ArrowUp":
+            switch (e.key.toLowerCase()) {
+                case "arrowup":
+                case "w":
                     setMovingDirection("up")
+                    setFacingDirection("up") // Update facing direction
                     break
-                case "ArrowDown":
+                case "arrowdown":
+                case "s":
                     setMovingDirection("down")
+                    setFacingDirection("down") // Update facing direction
                     break
-                case "ArrowLeft":
+                case "arrowleft":
+                case "a":
                     setMovingDirection("left")
+                    setFacingDirection("left") // Update facing direction
                     break
-                case "ArrowRight":
+                case "arrowright":
+                case "d":
                     setMovingDirection("right")
+                    setFacingDirection("right") // Update facing direction
                     break
             }
         }
 
         const handleKeyUp = () => {
             setMovingDirection(null)
+            // We keep the facing direction when keys are released
         }
 
         window.addEventListener("keydown", handleKeyDown)
@@ -49,19 +59,20 @@ export function usePlayerMovement() {
             const { x, y } = playerPosition
             let newX = x
             let newY = y
+            let speed = 1
 
             switch (movingDirection) {
                 case "up":
-                    newY = Math.max(0, y - 5)
+                    newY = Math.max(0, y - speed)
                     break
                 case "down":
-                    newY = Math.min(100, y + 5)
+                    newY = Math.min(100, y + speed)
                     break
                 case "left":
-                    newX = Math.max(0, x - 5)
+                    newX = Math.max(0, x - speed)
                     break
                 case "right":
-                    newX = Math.min(100, x + 5)
+                    newX = Math.min(100, x + speed)
                     break
             }
 
@@ -71,35 +82,37 @@ export function usePlayerMovement() {
             // Determine location based on position
             const newLocation = determineLocation(newX, newY)
             if (newLocation !== currentLocation) {
-                setCurrentLocation(newLocation)
+                console.log(`Entered ${newLocation ?? "Unknown area"}`);
+                setCurrentLocation(newLocation);
             }
         }, 100)
 
         return () => clearInterval(moveInterval)
     }, [movingDirection, playerPosition, currentLocation, updatePlayerPosition, setCurrentLocation])
 
-    // Determine location based on player position
     const determineLocation = (x, y) => {
-        // This is a simplified example - you would define actual boundaries for each location
-        if (x < 20 && y < 20) return "home"
-        if (x < 20 && y > 80) return "beach"
-        if (x > 80 && y < 20) return "mountain"
-        if (x > 80 && y > 80) return "temple"
-        if (x > 40 && x < 60 && y > 40 && y < 60) return "lake"
-        return currentLocation
-    }
+        for (const loc of LOCATIONS) {
+            const { xMin, xMax, yMin, yMax } = loc.area;
+            if (x >= xMin && x <= xMax && y >= yMin && y <= yMax) {
+                return loc.id;
+            }
+        }
+        return null; // not in any area
+    };
 
-    // Move player with on-screen buttons
+    // Update the movePlayer function to also set facing direction
     const movePlayer = (direction) => {
-        setMovingDirection(direction)
-        setTimeout(() => setMovingDirection(null), 100)
-    }
+        console.log("[movePlayer] called with:", direction);
+        setMovingDirection(direction);
+        setFacingDirection(direction);
+    };
 
     return {
         position: playerPosition,
         currentLocation,
         locationData: LOCATIONS.find((loc) => loc.id === currentLocation),
         movePlayer,
+        facingDirection,
+        movingDirection
     }
 }
-

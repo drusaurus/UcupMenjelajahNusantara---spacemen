@@ -2,10 +2,11 @@
 
 import { useEffect } from "react"
 import { useGame } from "./useGame"
+import { TimeOfDay, TIME_RANGES } from "../constants/gameData"
 
 export function useGameTime() {
     const { gameTime, updateGameTime } = useGame()
-    const { day, hour } = gameTime
+    const { day, hour, minute = 0 } = gameTime
 
     // Determine greeting based on time
     const getGreeting = () => {
@@ -20,26 +21,53 @@ export function useGameTime() {
         }
     }
 
-    // Game time simulation
+    // Determine time of day
+    const getTimeOfDay = (hour) => {
+        const inRange = (start, end, value) =>
+            start <= end ? value >= start && value <= end : value >= start || value <= end
+
+        if (inRange(TIME_RANGES[TimeOfDay.MORNING].start, TIME_RANGES[TimeOfDay.MORNING].end, hour))
+            return TimeOfDay.MORNING
+        if (inRange(TIME_RANGES[TimeOfDay.AFTERNOON].start, TIME_RANGES[TimeOfDay.AFTERNOON].end, hour))
+            return TimeOfDay.AFTERNOON
+        if (inRange(TIME_RANGES[TimeOfDay.EVENING].start, TIME_RANGES[TimeOfDay.EVENING].end, hour))
+            return TimeOfDay.EVENING
+        return TimeOfDay.NIGHT
+    }
+
+    // Game time simulation: 1 second = 1 in-game minute
     useEffect(() => {
         const timeInterval = setInterval(() => {
-            const newHour = hour + 1
+            let newMinute = minute + 1
+            let newHour = hour
+            let newDay = day
 
-            if (newHour >= 24) {
-                updateGameTime({ hour: 0, day: day + 1 })
-            } else {
-                updateGameTime({ hour: newHour })
+            if (newMinute >= 60) {
+                newMinute = 0
+                newHour += 1
+
+                if (newHour >= 24) {
+                    newHour = 0
+                    newDay += 1
+                }
             }
-        }, 1000) // 1 second in real life = 1 hour in game
+
+            updateGameTime({
+                day: newDay,
+                hour: newHour,
+                minute: newMinute,
+            })
+        }, 1000)
 
         return () => clearInterval(timeInterval)
-    }, [hour, day, updateGameTime])
+    }, [minute, hour, day, updateGameTime])
 
     return {
         day,
         hour,
+        minute,
         greeting: getGreeting(),
-        formattedHour: hour.toString().padStart(2, "0"),
+        timeOfDay: getTimeOfDay(hour),
+        formattedTime: `${hour.toString().padStart(2, "0")}:${minute.toString().padStart(2, "0")}`,
     }
 }
-

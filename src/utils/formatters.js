@@ -8,15 +8,9 @@ export function cn(...inputs) {
     return twMerge(clsx(inputs))
 }
 
-/**
- * Formats a number as Indonesian Rupiah
- */
 export function formatMoney(amount) {
-    return new Intl.NumberFormat("id-ID", {
-        style: "currency",
-        currency: "IDR",
+    return new Intl.NumberFormat("en-US", {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
     }).format(amount)
 }
-

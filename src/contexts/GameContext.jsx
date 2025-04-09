@@ -8,7 +8,7 @@ export const GameContext = createContext(undefined)
 const initialState = {
     currentScreen: GameScreen.START,
     playerName: "",
-    selectedAvatar: "",
+    selectedAvatar: null,
     gameOverReason: "",
     playerStatus: INITIAL_PLAYER_STATUS,
     gameTime: INITIAL_GAME_TIME,
