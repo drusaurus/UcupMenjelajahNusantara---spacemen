@@ -13,8 +13,6 @@ A travel simulation browser game built with React and Vite for the mid-term exam
 
 ## 🚀 Setup Instructions
 
-You can run this project using one of the following methods:
-
 ### Extract from ZIP File
 
 1. Extract the ZIP `UcupMenjelajahNusantara---spacemen`.
