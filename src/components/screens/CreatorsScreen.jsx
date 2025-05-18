@@ -1,6 +1,6 @@
 import {useGame} from "../../hooks/useGame.js";
 import { ChevronLeft } from "lucide-react";
-import { CREATORS } from "../../constants/gameData.js"
+import { CREATORS } from "../../constants/creators.js"
 
 export default function CreatorsScreen() {
     const { navigateToStart } = useGame();

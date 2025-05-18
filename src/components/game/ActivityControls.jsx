@@ -1,7 +1,7 @@
 "use client";
 
 import { usePlayerMovement } from "../../hooks/usePlayerMovement";
-import { LOCATION_ACTIVITIES } from "../../constants/gameData";
+import { LOCATION_ACTIVITIES } from "../../constants/locations.js";
 import { Info } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { usePlayerStatus} from "../../hooks/usePlayerStatus.js";

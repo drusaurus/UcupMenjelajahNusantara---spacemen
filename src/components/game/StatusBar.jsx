@@ -27,8 +27,8 @@ export function StatusBar() {
                         {greeting}, <span className="font-bold">{playerName}</span>!
                     </p>
                     <div className="flex items-center gap-2">
-                        <CircleDollarSign />
-                        <p className="text-[1rem] lg:text-2xl">{formatMoney(money)}</p>
+                        <CircleDollarSign className={"text-[#F3C623]"} />
+                        <p className="text-[1rem] lg:text-2xl text-[#F3C623]">{formatMoney(money)}</p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 // hooks/useMapBackground.js
-import { MAP_BACKGROUNDS } from "../constants/gameData"
+import { MAP_BACKGROUNDS } from "../constants/timeConfig.js"
 import { getTimeOfDay } from "../utils/time"
 
 export function useMapBackground(currentHour) {

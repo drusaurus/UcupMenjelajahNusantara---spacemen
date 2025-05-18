@@ -2,7 +2,7 @@
 
 import {useCallback, useContext} from "react"
 import { GameContext } from "../contexts/GameContext"
-import { GameScreen } from "../constants/gameData"
+import { GameScreen } from "../constants/gameScreens.js"
 
 export function useGame() {
     const context = useContext(GameContext)

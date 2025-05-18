@@ -1,19 +1,31 @@
 "use client"
 
 import { createContext, useReducer } from "react"
-import { GameScreen, INITIAL_PLAYER_STATUS, INITIAL_GAME_TIME, INITIAL_PLAYER_POSITION } from "../constants/gameData"
+import { GameScreen} from "../constants/gameScreens.js";
+import { INITIAL_PLAYER_POSITION, INITIAL_GAME_TIME, INITIAL_PLAYER_STATUS} from "../constants/gameState.js";
 
 export const GameContext = createContext(undefined)
 
 const initialState = {
     currentScreen: GameScreen.START,
-    playerName: "",
-    selectedAvatar: null,
+    playerName: "player name",
+    selectedAvatar: {
+        "name": "Boy",
+        "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/Faceset.png",
+        "animation": {
+            "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Walk.png",
+            "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Idle.png"
+        },
+        "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Dead.png"
+    },
     gameOverReason: "",
     playerStatus: INITIAL_PLAYER_STATUS,
     gameTime: INITIAL_GAME_TIME,
     playerPosition: INITIAL_PLAYER_POSITION,
     currentLocation: "home",
+
+    inventory: [],
+
 }
 
 function gameReducer(state, action) {

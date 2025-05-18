@@ -13,31 +13,31 @@ export function usePlayerStatus() {
     }, [playerStatus])
 
     // Degrade status periodically
-    useEffect(() => {
-        console.log("⏳ Starting degradation interval")
-
-        const interval = setInterval(() => {
-            const { meal, sleep, hygiene, happiness } = statusRef.current
-
-            const newMeal = Math.max(0, meal - 2)
-            const newSleep = Math.max(0, sleep - 1.5)
-            const newHygiene = Math.max(0, hygiene - 1)
-
-            const penalty = (meal < 20 ? 1 : 0) + (sleep < 20 ? 1 : 0) + (hygiene < 20 ? 1 : 0)
-            const newHappiness = Math.max(0, happiness - (0.5 + penalty))
-
-            console.log("📉 Degrading status...")
-
-            updatePlayerStatus({
-                meal: newMeal,
-                sleep: newSleep,
-                hygiene: newHygiene,
-                happiness: newHappiness,
-            })
-        }, 10000) // every 10 seconds
-
-        return () => clearInterval(interval)
-    }, [updatePlayerStatus]) // only updatePlayerStatus in deps
+    // useEffect(() => {
+    //     console.log("⏳ Starting degradation interval")
+    //
+    //     const interval = setInterval(() => {
+    //         const { meal, sleep, hygiene, happiness } = statusRef.current
+    //
+    //         const newMeal = Math.max(0, meal - 2)
+    //         const newSleep = Math.max(0, sleep - 1.5)
+    //         const newHygiene = Math.max(0, hygiene - 1)
+    //
+    //         const penalty = (meal < 20 ? 1 : 0) + (sleep < 20 ? 1 : 0) + (hygiene < 20 ? 1 : 0)
+    //         const newHappiness = Math.max(0, happiness - (0.5 + penalty))
+    //
+    //         console.log("📉 Degrading status...")
+    //
+    //         updatePlayerStatus({
+    //             meal: newMeal,
+    //             sleep: newSleep,
+    //             hygiene: newHygiene,
+    //             happiness: newHappiness,
+    //         })
+    //     }, 10000) // every 10 seconds
+    //
+    //     return () => clearInterval(interval)
+    // }, [updatePlayerStatus]) // only updatePlayerStatus in deps
 
     // Game over check — reactive to live playerStatus
     useEffect(() => {

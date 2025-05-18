@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { useGame } from "./useGame"
-import { LOCATIONS } from "../constants/gameData"
+import { LOCATIONS } from "../constants/locations.js"
 
 export function usePlayerMovement() {
     const { playerPosition, currentLocation, updatePlayerPosition, setCurrentLocation } = useGame()

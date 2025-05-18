@@ -1,7 +1,7 @@
 import { useGame } from "../../hooks/useGame.js";
 import { useState } from "react";
 import { ArrowBigLeft } from 'lucide-react';
-import { AVATARS } from "../../constants/gameData";
+import { AVATARS } from "../../constants/avatars.js";
 import WalkingAnimationPreview from "../ui/WalkAnimationPreview.jsx";
 
 export default function AvatarSelectionScreen() {
@@ -39,6 +39,8 @@ export default function AvatarSelectionScreen() {
         if(!selectedAvatar) return setError(
             "Please select an avatar"
         )
+
+        console.log(selectedAvatar)
 
         startGame(playerName, selectedAvatar)
     }

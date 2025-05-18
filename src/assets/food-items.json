@@ -1,0 +1,101 @@
+{
+  "foodItems": [
+    {
+      "name": "Beaf",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Beaf.png"
+    },
+    {
+      "name": "Calamari",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Calamari.png"
+    },
+    {
+      "name": "Fish",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Fish.png"
+    },
+    {
+      "name": "FortuneCookie",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/FortuneCookie.png"
+    },
+    {
+      "name": "Honey",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Honey.png"
+    },
+    {
+      "name": "Meat",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Meat.png"
+    },
+    {
+      "name": "Noodle",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Noodle.png"
+    },
+    {
+      "name": "Nut",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Nut.png"
+    },
+    {
+      "name": "Nut2",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Nut2.png"
+    },
+    {
+      "name": "Octopus",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Octopus.png"
+    },
+    {
+      "name": "Onigiri",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Onigiri.png"
+    },
+    {
+      "name": "Seed1",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Seed1.png"
+    },
+    {
+      "name": "Seed2",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Seed2.png"
+    },
+    {
+      "name": "Seed3",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Seed3.png"
+    },
+    {
+      "name": "SeedBig1",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/SeedBig1.png"
+    },
+    {
+      "name": "SeedBig2",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/SeedBig2.png"
+    },
+    {
+      "name": "SeedBig3",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/SeedBig3.png"
+    },
+    {
+      "name": "SeedLarge",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/SeedLarge.png"
+    },
+    {
+      "name": "SeedLargeWhite",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/SeedLargeWhite.png"
+    },
+    {
+      "name": "Shrimp",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Shrimp.png"
+    },
+    {
+      "name": "Sushi",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Sushi.png"
+    },
+    {
+      "name": "Sushi2",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Sushi2.png"
+    },
+    {
+      "name": "TeaLeaf",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/TeaLeaf.png"
+    },
+    {
+      "name": "Yakitori",
+      "sourcePath": "Ninja Adventure - Asset Pack/Items/Food/Yakitori.png"
+    }
+  ]
+}
+

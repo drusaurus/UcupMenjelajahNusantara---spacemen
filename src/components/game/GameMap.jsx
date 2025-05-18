@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useGameTime } from "../../hooks/useGameTime";
-import { MAP_BACKGROUNDS, LOCATIONS } from "../../constants/gameData";
+import { LOCATIONS } from "../../constants/locations.js";
+import { MAP_BACKGROUNDS} from "../../constants/timeConfig.js";
 import { useGame } from "../../hooks/useGame";
 import { usePlayerMovement } from "../../hooks/usePlayerMovement";
 import AvatarCanvas from "./AvatarCanvas";
@@ -65,12 +66,12 @@ export default function GameMap() {
     return (
         <div
             ref={containerRef}
-            className="relative w-full h-full flex justify-center items-center overflow-hidden"
+            className="relative w-full h-full flex justify-center items-center overflow-hidden bg-red-400"
         >
             {/* Map container with exact dimensions */}
             <div
                 ref={mapRef}
-                className="absolute flex justify-center items-center"
+                className="absolute flex justify-center items-center bg-emerald-800"
                 style={{
                     width: mapStyle.width,
                     height: mapStyle.height,
@@ -79,11 +80,11 @@ export default function GameMap() {
                 }}
             >
                 {/* Map image */}
-                <img
-                    src={background}
-                    alt={`Map - ${timeOfDay}`}
-                    className="absolute w-full h-full object-cover"
-                />
+                {/*<img*/}
+                {/*    src={background}*/}
+                {/*    alt={`Map - ${timeOfDay}`}*/}
+                {/*    className="absolute w-full h-full object-cover"*/}
+                {/*/>*/}
 
                 {/* Locations */}
                 {LOCATIONS.map((loc) => (
