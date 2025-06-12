@@ -235,6 +235,7 @@ export const INNER_LOCATIONS_DETAILS = {
     "andrew_house": {
         name: "Andrew's House",
         avatarScaleDivider: 8,
+        speedModifier: 2,
         background: "AndrewHome.png",
         defaultPlayerSpawn: { x: 50, y: 95 },
         activityZones: [
@@ -250,7 +251,7 @@ export const INNER_LOCATIONS_DETAILS = {
                         description: "Help Andrew clean his house. He's a bit of a mess right now.",
                         duration: 60,
                         effects: {
-                            hygiene: -40,
+                            hygiene: -10,
                             meal: -10,
                             sleep: -10,
                             happiness: 30

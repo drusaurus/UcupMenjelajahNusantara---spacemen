@@ -87,8 +87,7 @@ export function usePlayerMovement() {
             if (currentArea !== WORLD_MAP_ID) {
                 speedModifier = locationData.speedModifier;
             }
-
-            let speed = (playerSpeed ?? 1) * speedModifier;
+            const speed = (playerSpeed ?? 1) * speedModifier;
             switch (movingDirection) {
                 case "up":
                     newY = Math.max(0, y - speed)
