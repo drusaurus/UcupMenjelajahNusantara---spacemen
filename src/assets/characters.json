@@ -1,0 +1,776 @@
+[
+  {
+    "name": "Boy",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "CamouflageGreen",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageGreen/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageGreen/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageGreen/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageGreen/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "CamouflageRed",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageRed/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageRed/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageRed/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/CamouflageRed/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Cavegirl",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Cavegirl2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Cavegirl2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "CaveLion",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "CaveLion2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/CaveLion2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Caveman",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Caveman2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Caveman2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Child",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Child/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Child/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Child/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Child/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "DemonGreen",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonGreen/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonGreen/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonGreen/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonGreen/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "DemonRed",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonRed/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonRed/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonRed/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/DemonRed/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "EggBoy",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/EggBoy/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/EggBoy/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/EggBoy/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/EggBoy/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "EggGirl",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/EggGirl/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/EggGirl/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/EggGirl/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/EggGirl/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Eskimo",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Eskimo/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Eskimo/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Eskimo/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Eskimo/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "FighterRed",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterRed/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterRed/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterRed/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterRed/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "FighterWhite",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterWhite/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterWhite/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterWhite/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/FighterWhite/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Flam",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Flam/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Flam/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Flam/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Flam/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "GladiatorBlue",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/GladiatorBlue/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/GladiatorBlue/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/GladiatorBlue/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/GladiatorBlue/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "GoldStatue",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/GoldStatue/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/GoldStatue/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/GoldStatue/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/GoldStatue/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "GreenPig",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/GreenPig/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/GreenPig/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/GreenPig/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/GreenPig/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Hunter",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Hunter/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Hunter/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Hunter/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Hunter/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Inspector",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Inspector/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Inspector/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Inspector/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Inspector/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Knight",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Knight/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "KnightGold",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/KnightGold/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/KnightGold/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/KnightGold/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/KnightGold/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Lion",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Lion/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Lion/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Lion/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Lion/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "LionBoy",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/LionBoy/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/LionBoy/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/LionBoy/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/LionBoy/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "LionOrange",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/LionOrange/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/LionOrange/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/LionOrange/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/LionOrange/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "LionYellow",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/LionYellow/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/LionYellow/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/LionYellow/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/LionYellow/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "ManGreen",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/ManGreen/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/ManGreen/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/ManGreen/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/ManGreen/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "MaskFrog",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskFrog/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskFrog/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskFrog/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskFrog/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "MaskGoldRacoon",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskGoldRacoon/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskGoldRacoon/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskGoldRacoon/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskGoldRacoon/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "MaskRacoon",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskRacoon/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskRacoon/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskRacoon/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/MaskRacoon/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Master",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Master/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Master/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Master/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Master/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Monk",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Monk2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Monk2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Monkey",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Monkey/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Monkey/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Monkey/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Monkey/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "MonkeyBoxerBlue",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerBlue/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerBlue/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerBlue/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerBlue/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "MonkeyBoxerRed",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerRed/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerRed/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerRed/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/MonkeyBoxerRed/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaBlue",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaBlue2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBlue2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaBomb",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBomb/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBomb/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBomb/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaBomb/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaDark",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaDark/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaDark/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaDark/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaDark/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaEskimo",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaEskimo/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaEskimo/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaEskimo/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaEskimo/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaGray",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGray/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGray/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGray/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGray/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaGreen",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGreen/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGreen/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGreen/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaGreen/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaMageBlack",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageBlack/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageBlack/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageBlack/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageBlack/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaMageOrange",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageOrange/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageOrange/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageOrange/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMageOrange/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaMasked",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMasked/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMasked/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMasked/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaMasked/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaRed",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaRed2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaRed2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "NinjaYellow",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaYellow/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaYellow/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaYellow/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/NinjaYellow/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Noble",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Noble/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Noble/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Noble/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Noble/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "OldMan",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "OldMan2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "OldMan3",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan3/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan3/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan3/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/OldMan3/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "OldWoman",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/OldWoman/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/OldWoman/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/OldWoman/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/OldWoman/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Pig",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Pig/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Pig/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Pig/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Pig/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Princess",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Princess/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Princess/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Princess/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Princess/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "RedGladiator",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/RedGladiator/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/RedGladiator/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/RedGladiator/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/RedGladiator/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "RedNinja3",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/RedNinja3/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/RedNinja3/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/RedNinja3/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/RedNinja3/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "RobotCamouflage",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotCamouflage/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotCamouflage/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotCamouflage/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotCamouflage/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "RobotGreen",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGreen/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGreen/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGreen/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGreen/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "RobotGrey",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGrey/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGrey/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGrey/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/RobotGrey/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Samurai",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Samurai/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Samurai/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Samurai/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Samurai/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "SamuraiBlue",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiBlue/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiBlue/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiBlue/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiBlue/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "SamuraiRed",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiRed/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiRed/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiRed/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/SamuraiRed/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Shaman",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Shaman/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Shaman/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Shaman/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Shaman/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "ShamanLion",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/ShamanLion/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/ShamanLion/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/ShamanLion/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/ShamanLion/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Skeleton",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Skeleton/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Skeleton/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Skeleton/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Skeleton/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "SkeletonDemon",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/SkeletonDemon/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/SkeletonDemon/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/SkeletonDemon/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/SkeletonDemon/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "SorcererBlack",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererBlack/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererBlack/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererBlack/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererBlack/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "SorcererOrange",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererOrange/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererOrange/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererOrange/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/SorcererOrange/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Spirit",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Spirit/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Spirit/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Spirit/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Spirit/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Statue",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Statue/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Statue/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Statue/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Statue/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Sultan",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Sultan2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Sultan2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Tengu",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Tengu2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Tengu2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Vampire",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Vampire/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Vampire/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Vampire/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Vampire/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Villager",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Villager2",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager2/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager2/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager2/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager2/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Villager3",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager3/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager3/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager3/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager3/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Villager4",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager4/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager4/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager4/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager4/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Villager5",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager5/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager5/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager5/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Villager5/SeparateAnim/Dead.png"
+  },
+  {
+    "name": "Woman",
+    "avatar": "/Ninja Adventure - Asset Pack/Actor/Characters/Woman/Faceset.png",
+    "animation": {
+      "walk": "/Ninja Adventure - Asset Pack/Actor/Characters/Woman/SeparateAnim/Walk.png",
+      "idle": "/Ninja Adventure - Asset Pack/Actor/Characters/Woman/SeparateAnim/Idle.png"
+    },
+    "dead": "/Ninja Adventure - Asset Pack/Actor/Characters/Woman/SeparateAnim/Dead.png"
+  }
+]
