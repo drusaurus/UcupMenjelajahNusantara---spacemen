@@ -1,11 +1,10 @@
 # UMN – Ucup Menjelajah Nusantara 🧭
 
 A travel simulation browser game built with React and Vite for the mid-term exam of IF231L Introduction to Internet Technology at Universitas Multimedia Nusantara.
-
+The game is hosted at https://ucup-menjelajah-nusantara-spacemen.vercel.app/
 ## 👥 Group Members
 
 - Andrew Imanuel Hermawan - 00000114913
-- Fulvian Calya Adhi Pramana - 00000119150
 - Avirel Andika Putra - 00000136675
 - Theovillus Ch. M. R. Roringkon - 00000116329
 
@@ -37,6 +36,9 @@ The app will run at `http://localhost:3000` by default.
 ---
 
 ## 🔹 Gameplay Rules
+- Player must collect as much score as possible throughout the game. Score can be obtained through exploring different locations, doing various activities, eating various foods, and obtaining rare items. Play as long as possible to reach the highest score.
+- Player's status will degrade every 10 seconds, make sure to keep the status at a healthy value to gain maximum points.
+- 
 
 ### 🎭 Starting the Game
 - Players choose their **avatar** and input their **name**.
@@ -60,7 +62,6 @@ Each stat is represented by a progress bar, starting at 50%.
 There are the **distinct locations**, such as:
 - Home 🏠
 - Andrew's House 🏡
-- Station 🚉
 - Beach 🏖️
 - Lake 🦢
 - Temple 🛕
@@ -72,25 +73,7 @@ There are the **distinct locations**, such as:
 - Movement between locations changes available activities.
 
 ### ⚙ Activities by Location
-Each location offers unique activities that affect your stats (meal, sleep, hygiene, happiness, and money). Some activities are free, while others have a cost or provide income. Here's a summary of what you can do in each location:
-
-- Home: Cook, clean, nap, or earn money via freelance work.
-
-- Beach: Swim, build sandcastles, and enjoy seafood.
-
-- Lake: Go fishing, row a boat, or enjoy a lakeside snack.
-
-- Temple: Pray, learn history, or help clean the temple.
-
-- Mountain: Climb, relax by a campfire, or try local food.
-
-- Andrew's House: Socialize with a friend, share meals, or watch a movie.
-
-- Stasion: Help staff for money, buy snacks, or people-watch.
-
-- Forest: Gather herbs, explore, or enjoy a picnic.
-
-**ℹ Hover Info**: Any activity that affects money includes an info icon with a tooltip explanation.
+Each location offers unique activities that affect your stats (meal, sleep, hygiene, happiness, and money). Some activities are free, while others have a cost or provide income. Every locations have different areas which player can explore and do activities to obtain many things. Do as many activities to gain maximum points.
 
 ### 📉 Status Degradation
 - Stats gradually drop over time.
