@@ -85,7 +85,7 @@ export function usePlayerMovement() {
             const locationData = INNER_LOCATIONS_DETAILS[currentLocation] || {};
             let speedModifier = 1;
             if (currentArea !== WORLD_MAP_ID) {
-                speedModifier = locationData.speedModifier;
+                speedModifier = locationData.speedModifier ?? 1;
             }
             const speed = (playerSpeed ?? 1) * speedModifier;
             switch (movingDirection) {

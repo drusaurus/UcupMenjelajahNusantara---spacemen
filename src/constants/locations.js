@@ -312,7 +312,14 @@ export const INNER_LOCATIONS_DETAILS = {
                         },
                         rewards: {
                             possibleLoots: [
+                                {itemId: "bluegill_fish", quantity: 1, chance:0.25 },
                                 {itemId: "guppy", quantity: 1, chance:0.15 },
+                                {itemId: "plastic_bag", quantity: 1, chance: 0.2 },
+                                {itemId: "highfin_banded_shark", quantity: 1, chance:0.05 },
+                                {itemId: "golden_tench", quantity: 1, chance:0.15 },
+                                {itemId: "axolotl", quantity: 1, chance:0.05 },
+                                {itemId: "fish", quantity: 1, chance:0.5 },
+                                {itemId: "catfish", quantity: 1, chance:0.25 },
                             ],
                             playerStatus: {
                                 score: 15,
@@ -339,6 +346,30 @@ export const INNER_LOCATIONS_DETAILS = {
                         //         {}
                         //     ]
                         // }
+                    },
+                    {
+                        id: "swim_in_lake",
+                        name: "Swim in the Lake",
+                        mode: "gradual_ff",
+                        description: "Let's relax in the lake and swim.",
+                        duration: 30,
+                        requirements: {
+                            time: {
+                                hourRange: [8, 19]
+                            },
+                        },
+                        effects: {
+                            happiness: 30,
+                            hygiene: -10,
+                            sleep: -10,
+                            meal: -10
+                        },
+                        rewards: {
+                            possibleLoots: [
+                                { itemId: "coin", quantity: 10, chance: 0.5},
+                                {itemId: "mossball", quantity: 5, chance: 0.5 },
+                            ]
+                        }
                     }
                 ]
             },
@@ -370,6 +401,43 @@ export const INNER_LOCATIONS_DETAILS = {
                         description: "Welcome to B'Lake Restaurant. What do you want to eat?",
                         interactionType: "OPEN_SHOP",
                         shopId: "lake_restaurant"
+                    },
+                    {
+                        id: "lake_restaurant_wash_hands",
+                        name: "Wash Hands",
+                        mode: "gradual_ff",
+                        description: "Wash your hands. Its filthy.",
+                        duration: 15,
+                        effects: {
+                            hygiene: 30,
+                        },
+                    },
+                    {
+                        id: "lake_restaurant_eat_cooked_fish",
+                        name: "Eat Cooked Fish",
+                        mode: "gradual_ff",
+                        description: "Eat the cooked fish.",
+                        duration: 20,
+                        costs: [
+                            {itemId: "fish", quantity: 1}
+                        ],
+                        effects: {
+                            meal: 40,
+                        },
+                    },
+                    {
+                        id: "lake_restaurant_eat_pecel_lele",
+                        name: "Eat Pecel Lele",
+                        mode: "gradual_ff",
+                        description: "Eat the pecel lele.",
+                        duration: 20,
+                        costs: [
+                            {itemId: "catfish", quantity: 1}
+                        ],
+                        effects: {
+                            meal: 30,
+                            happiness: 10
+                        }
                     }
                 ]
             }

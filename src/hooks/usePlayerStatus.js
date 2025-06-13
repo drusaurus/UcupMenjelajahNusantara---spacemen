@@ -15,45 +15,45 @@ export function usePlayerStatus() {
     }, [playerStatus])
 
     // Degrade status periodically
-    useEffect(() => {
-        if (isPlayerBusy) {
-            console.log("🚫 Player is busy — skipping degradation.");
-            return
-        }
+        useEffect(() => {
+            if (isPlayerBusy) {
+                console.log("🚫 Player is busy — skipping degradation.");
+                return
+            }
 
-        console.log("⏳ Starting degradation interval")
+            console.log("⏳ Starting degradation interval")
 
-        const interval = setInterval(() => {
-            const { meal, sleep, hygiene, happiness, score } = statusRef.current
+            const interval = setInterval(() => {
+                const { meal, sleep, hygiene, happiness, score } = statusRef.current
 
-            const newMeal = Math.max(0, meal - 2)
-            const newSleep = Math.max(0, sleep - 1.5)
-            const newHygiene = Math.max(0, hygiene - 1)
+                const newMeal = Math.max(0, meal - 2)
+                const newSleep = Math.max(0, sleep - 1.5)
+                const newHygiene = Math.max(0, hygiene - 1)
 
-            const penalty = (meal < 20 ? 1 : 0) + (sleep < 20 ? 1 : 0) + (hygiene < 20 ? 1 : 0)
-            const newHappiness = Math.max(0, happiness - (0.5 + penalty))
+                const penalty = (meal < 20 ? 1 : 0) + (sleep < 20 ? 1 : 0) + (hygiene < 20 ? 1 : 0)
+                const newHappiness = Math.max(0, happiness - (0.5 + penalty))
 
-            const mealRatio = meal / 100
-            const sleepRatio = sleep / 100
-            const hygieneRatio = hygiene / 100
-            const happinessRatio = happiness / 100
+                const mealRatio = meal / 100
+                const sleepRatio = sleep / 100
+                const hygieneRatio = hygiene / 100
+                const happinessRatio = happiness / 100
 
-            const scoreGain = Math.round((mealRatio + sleepRatio + hygieneRatio + happinessRatio) / 4 * 5) // or `Math.round(averageHealth * 2)` if you want more granularity
-            const newScore = score + scoreGain
+                const scoreGain = Math.round((mealRatio + sleepRatio + hygieneRatio + happinessRatio) / 4 * 5) // or `Math.round(averageHealth * 2)` if you want more granularity
+                const newScore = score + scoreGain
 
-            console.log(`📉 Degrading status... (+${scoreGain.toFixed(2)} score)`)
+                console.log(`📉 Degrading status... (+${scoreGain.toFixed(2)} score)`)
 
-            updatePlayerStatus({
-                meal: newMeal,
-                sleep: newSleep,
-                hygiene: newHygiene,
-                happiness: newHappiness,
-                score: newScore,
-            })
-        }, 10000)
+                updatePlayerStatus({
+                    meal: newMeal,
+                    sleep: newSleep,
+                    hygiene: newHygiene,
+                    happiness: newHappiness,
+                    score: newScore,
+                })
+            }, 10000)
 
-        return () => clearInterval(interval)
-    }, [updatePlayerStatus, isPlayerBusy])
+            return () => clearInterval(interval)
+        }, [updatePlayerStatus, isPlayerBusy])
 
     // Game over check — reactive to live playerStatus
     useEffect(() => {

@@ -288,15 +288,25 @@ export default function InventoryModal() {
                                     return (
                                         <li
                                             key={`${itemInstance.itemId}-${index}-${itemInstance.quantity}`}
-                                            className={`relative aspect-square border rounded-md p-1 sm:p-1.5 flex flex-col items-center justify-center cursor-pointer group transition-all duration-150
-                                                        ${isSelected ? 'bg-sky-700 border-sky-400 shadow-md scale-105' : 'bg-neutral-700/50 hover:bg-neutral-600/70 border-neutral-600'}`}
+                                            className={`
+                                                relative
+                                                border rounded-md p-1 sm:p-1.5
+                                                flex flex-col items-center justify-center
+                                                cursor-pointer group
+                                                transition-all duration-150
+                                                ${isSelected ? 'bg-sky-700 border-sky-400 shadow-md scale-105' : 'bg-neutral-700/50 hover:bg-neutral-600/70 border-neutral-600'}
+                                              `}
+                                            style={{
+                                                aspectRatio: '1 / 1',
+                                                minHeight: 'min(100%, 4rem)' // fallback, can be adjusted
+                                            }}
                                             title={itemTitle}
                                             onClick={() => handleItemClick(itemInstance)}
                                         >
                                             {itemDef.sourcePath ? (
                                                 <img src={itemDef.sourcePath} alt={itemDef.name} className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 object-contain pixelated" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'flex'; }} />
                                             ) : null}
-                                            <div className={`w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-neutral-600 items-center justify-center text-neutral-500 ${itemDef.sourcePath ? 'hidden' : 'flex'}`}>?</div>
+                                            <div className={`w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-neutral-600 items-center justify-center text-neutral-500 ${itemDef.sourcePath ? 'hidden' : 'flex'}`}>?</div>
                                             {itemInstance.quantity > 1 && itemDef.stackable && (
                                                 <span className="absolute bottom-0 right-0 bg-sky-600 text-white text-[10px] font-bold px-1 leading-tight rounded-tl-md rounded-br-md">
                                                     {itemInstance.quantity}

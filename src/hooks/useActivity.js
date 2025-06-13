@@ -90,14 +90,15 @@ export default function useActivity() {
             }
         }
 
-        // ===== POSSIBLE LOOTS =====
         function getRandomQuantityFromTiers(quantityTiers) {
             if (!quantityTiers || quantityTiers.length === 0) return 1;
+
             const totalChance = quantityTiers.reduce((sum, tier) => sum + (tier.chance || 0), 0);
             if (totalChance === 0) return 1;
 
             const roll = Math.random() * totalChance;
             let cumulative = 0;
+
             for (const tier of quantityTiers) {
                 cumulative += (tier.chance || 0);
                 if (roll <= cumulative) {
@@ -105,58 +106,81 @@ export default function useActivity() {
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
             }
+
+            // Fallback to first tier range
             const [min, max] = quantityTiers[0].range;
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
         function getLootQuantity(loot) {
             if (loot.quantityTiers) return getRandomQuantityFromTiers(loot.quantityTiers);
+
             if (Array.isArray(loot.quantity)) {
                 const [min, max] = loot.quantity;
                 return Math.floor(Math.random() * (max - min + 1)) + min;
             }
+
             return loot.quantity ?? 1;
         }
 
-        if (Array.isArray(rewards.possibleLoots)) {
-            const roll = Math.random(); // Between 0 and 1
+        if (Array.isArray(rewards.possibleLoots) && rewards.possibleLoots.length > 0) {
+            // Step 1: Calculate total weight from chances
+            const weightedLoots = rewards.possibleLoots.map(loot => {
+                let weight = loot.chance;
 
-            for (const loot of rewards.possibleLoots) {
-                // Step 1: Determine the loot's drop chance
-                let dropChance = loot.chance;
-
-                if (dropChance === undefined && Array.isArray(loot.quantityTiers)) {
-                    // Sum all tier chances
-                    dropChance = loot.quantityTiers.reduce((sum, tier) => sum + (tier.chance ?? 0), 0);
+                if (weight === undefined && Array.isArray(loot.quantityTiers)) {
+                    weight = loot.quantityTiers.reduce((sum, tier) => sum + (tier.chance ?? 0), 0);
                 }
 
-                if (dropChance === undefined) {
-                    // If no chance is defined at all, assume 100%
-                    dropChance = 1.0;
+                if (weight === undefined) {
+                    console.warn(`Missing 'chance' for loot "${loot.itemId}", defaulting to 0.`);
+                    weight = 0;
                 }
 
-                // Step 2: Roll to see if this loot is given
-                if (roll <= dropChance) {
-                    const quantity = getLootQuantity(loot);
+                return { loot, weight };
+            });
+
+            const totalWeight = weightedLoots.reduce((sum, entry) => sum + entry.weight, 0);
+
+            if (totalWeight <= 0) {
+                console.warn("No valid loot chances found. Skipping reward.");
+            } else {
+                // Step 2: Roll based on cumulative weight
+                const roll = Math.random() * totalWeight;
+                let cumulative = 0;
+                let selectedLoot = null;
+
+                for (const { loot, weight } of weightedLoots) {
+                    cumulative += weight;
+                    if (roll <= cumulative) {
+                        selectedLoot = loot;
+                        break;
+                    }
+                }
+
+                // Step 3: Reward the selected item
+                if (selectedLoot) {
+                    const quantity = getLootQuantity(selectedLoot);
 
                     if (quantity > 0) {
-                        const sprite = ITEMS[loot.itemId]?.sourcePath || Emotes.emote_happy;
+                        const sprite = ITEMS[selectedLoot.itemId]?.sourcePath || Emotes.emote_happy;
                         queueEmote("received reward", sprite);
 
-                        if (loot.itemId === "coin") {
+                        if (selectedLoot.itemId === "coin") {
                             const newMoney = (state.playerStatus?.money ?? 0) + quantity;
                             dispatch({ type: "UPDATE_PLAYER_STATUS", payload: { money: newMoney } });
                         } else {
                             dispatch({
                                 type: "ADD_ITEM_TO_PLAYER_INVENTORY",
-                                payload: { item: { itemId: loot.itemId, quantity } }
+                                payload: { item: { itemId: selectedLoot.itemId, quantity } }
                             });
-                            notifyIfRareItem(loot.itemId, true)
+                            notifyIfRareItem(selectedLoot.itemId, true);
                         }
                     }
                 }
             }
         }
+
 
         // ===== PLAYER STATUS =====
         if (rewards?.playerStatus) {
@@ -285,23 +309,45 @@ export default function useActivity() {
                 const def = ITEMS[req.itemId];
                 if (!def) return false;
 
+                const requiredQty = req.quantity || 1;
                 const hasQty = inventory.countPlayerItem(req.itemId);
-                if (hasQty < (req.quantity || 1)) return false;
+
+                if (hasQty < requiredQty) return false;
 
                 if (def.type === ITEM_TYPES.TOOL) {
-                    const tool = inventory.getPlayerItemInstance(req.itemId);
-                    if (!tool) return false;
+                    // Check and update usable tool instance
+                    const allTools = inventory.getPlayerItemInstance(req.itemId);
+                    let foundUsableTool = false;
 
-                    const newUses = (tool.uses || 0) + 1;
-                    inventory.updatePlayerItemInstance(req.itemId, { uses: newUses });
-                    toolsUsed.push({ itemId: req.itemId, itemDef: def, instanceSnapshot: { ...tool, uses: newUses } });
+                    for (const tool of allTools) {
+                        const currentUses = tool.uses || 0;
+                        const newUses = currentUses + 1;
 
-                    if (def.maxUse && newUses >= def.maxUse) {
-                        inventory.removeItemFromPlayer(req.itemId, req.quantity || 1);
+                        if (!def.maxUse || newUses <= def.maxUse) {
+                            // Update this tool instance
+                            inventory.updatePlayerItemInstance(req.itemId, { id: tool.id, uses: newUses });
+
+                            toolsUsed.push({
+                                itemId: req.itemId,
+                                itemDef: def,
+                                instanceSnapshot: { ...tool, uses: newUses }
+                            });
+
+                            // Remove tool if maxUse reached
+                            if (def.maxUse && newUses >= def.maxUse) {
+                                inventory.removeItemFromPlayer(req.itemId, 1);
+                            }
+
+                            foundUsableTool = true;
+                            break; // Use only one tool instance
+                        }
                     }
+
+                    if (!foundUsableTool) return false; // No usable tool found
                 }
             }
         }
+
 
         if (activityData.requirements?.stats) {
             for (const [stat, min] of Object.entries(activityData.requirements.stats)) {
